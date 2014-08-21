@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>TO prosto!</title>
+<!-- Bootstrap link -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Bootstrap link  end-->
+<!-- CSS stylesheet -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- CSS stylesheet end-->
+<!-- Google fonts Link-->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery.min.js"> </script>
+<script src="js/hover_pack.js"></script>
+</head>
+<body>
+<!-- Header starts here -->
+	<div class="strip"> </div>
+	<div class="header">
+		<div class="container">
+			<div class="header-top">
+				<div class="logo">
+					<h1><a href="index.html">Авто ТО</a></h1>
+				</div>
+				<div class="menu">
+					<a class="toggleMenu" href="#"><img src="images/nav_icon.png" alt="" /> </a>
+		  				<ul class="nav" id="nav">
+						  <li class="current"><a href="index.html" class="scroll">Домой</a></li>
+						  <li><a href="#about" class="scroll">Дилеры</a></li>
+						  <li><a href="#services" class="scroll">Услуги</a></li>
+						  <li><a href="#work" class="scroll">На карте</a></li>
+						  <li><a href="#contact" class="scroll">Профиль</a></li>								
+						 </ul>
+						<script type="text/javascript" src="js/responsive-nav.js"></script>
+						<script type="text/javascript" src="js/move-top.js"></script>
+						<script type="text/javascript" src="js/easing.js"></script>
+						<script type="text/javascript">
+						jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+						event.preventDefault();
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+							});
+						});
+						</script>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- Banner Starts Here -->
+				<div class="slide-banner-left">
+					<img class="slide-img" src="images/slider-frame.png" />
+				<!----slider-script---->
+						<script>
+							$(function() {
+							
+								$("#slideshow > div:gt(0)").hide();
+						
+								setInterval(function() { 
+								  $('#slideshow > div:first')
+								    .fadeOut(1000)
+								    .next()
+								    .fadeIn(1000)
+								    .end()
+								    .appendTo('#slideshow');
+								},  3000);
+								
+							});
+						</script>
+						<!----//End-script---->
+						<div id="slideshow">
+							   <div>
+							     <img src="images/s2.jpg" alt="" />
+							   </div>
+							   <div>
+							     <img src="images/s3.jpg" alt="" />
+							   </div>
+							   <div>
+							     <img src="images/s1.jpg" alt="" />
+							   </div>
+					</div>
+					<div class="banner-head">
+						<h2>Сравни услуги ТО и выбери лучшее!</h2>
+						<p>у официальных дилеров в твоём городе</p>
+					</div>
+					<div class="banner-rings">
+						<i class="ring1"> </i>
+						<i class="ring2"> </i>
+						<i class="ring3"> </i>
+						<i class="ring4"> </i>
+						<i class="ring5"> </i>
+					</div>
+				<a href="#" class="banner-btn"> Сравнить</a>					
+			</div>
+				<!-- Banner Ends Here -->
+			</div>
+		</div>
+		<!-- Header ends here -->
+		<!-- About Us -->
+		<div class="container">
+			<div class="about-us" id="about">
+				<div class="row about-us-row">
+					<div class="col-md-4 about-us-column-left">
+						<h3>Пройди ТО и оставь свой отзыв</h3>
+						<p>Узнай, что пишут другие об услугах ТО</p>
+						<a href="#">Узнать</a>
+					</div>
+					<div class="col-md-8 about-us-column-right">
+						<h3>Оценивай по качеству и стоимости</h3>
+						<div class="row about-us-one-row">
+							<div class="col-md-2 about-us-one-row-col">
+								<i class="ring6"> </i>									
+							</div>
+							<div class="col-md-10 about-us-one-row-col">
+								<p>Транспортная доступность</p>
+							</div>
+					    </div>
+					    <div class="row about-us-one-row">
+							<div class="col-md-2 about-us-one-row-col">
+								<i class="ring7"> </i>									
+							</div>
+							<div class="col-md-10 about-us-one-row-col">
+								<p>Качество и спектр предоставляемых услуг</p>
+							</div>
+					    </div>
+					    <div class="row about-us-one-row">
+							<div class="col-md-2 about-us-one-row-col">
+								<i class="ring8"> </i>									
+							</div>
+							<div class="col-md-10 about-us-one-row-col">
+								<p>Отношение к клиенту</p>
+							</div>
+					    </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>	
+	
+		<!-- Services starts Here -->
+<!--		<div class="services"id="work">
+			<div class="container">
+				<div class="services-top">
+					<h3>Quios sedlu commodo</h3>
+					<p>Integer vitae libero ac risus egestas</p>
+				</div>
+				<div class="row services-row">
+					<div class="col-md-4 service-row-column"><i class="image-left"> </i><i class="para"><p>Sed egestas avulputate eros pede ibero, faucibus ipiscing, commodo quis vida id, est. Sed lectus. </p><small><span><a href="#">John Doe </a></span>  designation</small></i> <div class="clearfix"> </div></div>
+					<div class="col-md-4 service-row-column"><i class="image-left-1"> </i><i class="para"><p>Jogestas avulputate eros pede ibero, faucibus ipiscing, commodo quis vida id, est. Sed lectus.  </p><small><span><a href="#">Amanda Doe</a></span>  designation</small></i> <div class="clearfix"> </div> </div>
+					<div class="col-md-4 service-row-column"><i class="image-left-2"> </i><i class="para"><p>Sogestas avulputate eros pede ibero, faucibus ipiscing, commodo quis vida id, est. Sed lectus.  </p><small><span><a href="#">Peter Doe </a></span>  designation</small></i> <div class="clearfix"> </div></div>
+				</div> 
+				<div class="clearfix"> </div>
+			</div>
+		</div>-->
+		<!-- Services ENDS Here -->
+		<!-- Contact starts Here -->
+		<div class="contact" id="contact">
+			<div class="container">
+				<div class="row contact-row">
+					<div class="col-md-6 contact-row-column">
+						<form>
+							<input type="text" class="textbox" value="Enter Your Name here.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Name here.. ';}">
+							<input type="text" class="textbox" value="Enter Your Email here.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Email here..';}">
+							<textarea rows="6" value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Message here.. ';}">Enter Your Message here..</textarea>
+							<div class="submit"><input type="submit" value="Submit"/></div>
+						</form>
+					</div>
+					<div class="col-md-6 contact-row-column"><h3>На карте</h3>
+						<div class="map">
+							<iframe frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1667809.5405374563!2d-98.19684021195167!3d35.27017247326614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ac3911b1ac4f9d%3A0x5d1ccf33400aea48!2sOklahoma%2C+USA!5e0!3m2!1sen!2sin!4v1405178655430"> </iframe>
+						</div>	
+						<p>г. Москва, Тестовская ул. 10, бизнес-центр "Северная башня"</p>
+						<small> РФ</small>
+						<p>Телефон: +000 888 88888</p>
+						<small>Email : <a href="#">info[at]prosto-to.com</a></small>
+					 </div>
+				</div>
+			</div>
+		</div>
+		<!-- Contact Ends Here -->
+		<!-- Footer starts Here -->
+		<div class="footer">
+			<div class="container">
+				<div class="footer-top">
+				<p>2014 &copy;&nbsp; <a href="http://prosto-to.com/"> Prosto-to.com</a></p>
+				</div>
+			</div>
+			<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>
+</body>
+</html>
